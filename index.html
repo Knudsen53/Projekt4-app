@@ -4,6 +4,7 @@
     <title>Login Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -19,8 +20,10 @@
     <div class="login-intro">
       <h2>LOG IND</h2>
     </div>
+    
     <div class="login-box">
-      <form>
+
+      <form id="login-form">
           <h3><label for="studie-nr">Email:</label></h3>
           <input type="text" id="studie-nr" placeholder="UCL mail">
           <h3><label for="kode">Kode:</label></h3>
@@ -36,8 +39,12 @@
           </div>
         
         </div>
-        <button class="login-button">LOG IND</button>
+
+        <a href="A:\VScode\Projekt4-app\forside.html">
+        <button class="login-button" id="login-button">LOG IND</button>
+      
       </form>
+   
 
     </div>
   </main>
