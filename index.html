@@ -5,31 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <header></header>
-    
-    <main>
-      <div class="login-intro">
-        <h2>LOG IND</h2>
-      </div>
-      <div class="login-box">
-        <h3>Studie nr</h3>
-        <input type="text" placeholder="Studie nr">
-        <h3>Kode</h3>
-        <input type="password" placeholder="Kode">
-        <div class="checkbox-container">
+  <header>
+  <nav> 
+    <a href="#" class="logo">
+      <img src="Billeder\Logo.png" alt="Logo">
+    </a>
+  </nav>
+  </header>
+  
+  <main>
+    <div class="login-intro">
+      <h2>LOG IND</h2>
+    </div>
+    <div class="login-box">
+      <form>
+          <h3><label for="studie-nr">Email:</label></h3>
+          <input type="text" id="studie-nr" placeholder="UCL mail">
+          <h3><label for="kode">Kode:</label></h3>
+          <input type="password" id="kode" placeholder="Kode">
+          <div class="checkbox-container">
           <div class="remember-me-container">
+            
             <input type="checkbox" id="remember-me">
-            <label for="remember-me">Remember me</label>
+            <label for="remember-me">Husk mig</label>
           </div>
-          <div class="forgot-password-container">
-            <a href="#">Forgot password?</a>
+          <div class="forgot-password-link">
+            <a href="#">Glemt password</a>
           </div>
+        
         </div>
         <button class="login-button">LOG IND</button>
-      </div>
-    </main>
-    
-    <footer></footer>
-  </body>
+      </form>
+
+    </div>
+  </main>
+  
+  <footer>
+    <nav><!-- Navigation links go here --></nav>
+  </footer>
 </html>
+
