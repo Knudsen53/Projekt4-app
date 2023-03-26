@@ -9,8 +9,8 @@ body {
 }
 
 header {
-  height: 50px;
-  background-color: #3498db;
+  height: 100px;
+  background-color: #19444D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,10 +37,9 @@ main {
 
 .login-box {
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   text-align: center;
+  
 }
 
 h2 {
@@ -67,7 +66,16 @@ input[type="password"] {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.5);
+}
+.checkbox-container a {
+  margin-left: 10px;
 }
 
 label {
@@ -79,19 +87,25 @@ a {
   font-size: 14px;
 }
 
-button {
-  width: 100%;
+.login-button {
+  width: 200px;
+  height: 70px;
   padding: 10px;
-  background-color: #3498db;
+  background-color:#19444D;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 footer {
-  height: 50px;
-  background-color: #2c3e50;
+  height: 100px;
+  background-color: #19444D;
   color: #fff;
   display: flex;
   justify-content: center;
