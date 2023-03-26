@@ -189,7 +189,6 @@ footer {
 @media only screen and (max-width: 600px) {
   
   header {
-    flex-direction: column;
     height: 85px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   }
