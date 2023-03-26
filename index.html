@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -10,11 +11,26 @@
     </header>
     
     <main>
-      <!-- Login form goes here -->
+      <div class="login-intro">
+        <h2>Login</h2>
+        <p>Please enter your username and password to log in.</p>
+      </div>
+      <div class="login-box">
+        <h3>Username</h3>
+        <input type="text" placeholder="Enter username">
+        <h3>Password</h3>
+        <input type="password" placeholder="Enter password">
+        <div class="checkbox-container">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button>Login</button>
+      </div>
     </main>
     
     <footer>
-      <p>&copy; 2023 My Company</p>
+      <p>&copy; 2023 My Website</p>
     </footer>
   </body>
 </html>
