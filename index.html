@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Login Page</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
 
-  <body>
+<body>
+
   <header>
-  <nav> 
-    <a href="#" class="logo">
-      <img src="Billeder\Logo.png" alt="Logo">
-    </a>
-  </nav>
-  </header>
+    <nav> 
+        <img src="Billeder\Logo.png" alt="Logo">
+    </nav>
+    </header>
   
   <main>
     <div class="login-intro">
@@ -33,28 +33,28 @@
             
             <input type="checkbox" id="remember-me">
             <label for="remember-me">Husk mig</label>
-          </div>
+        </div>
           <div class="forgot-password-link">
             <a href="#">Glemt password</a>
-          </div>
+        </div>
         
         </div>
 
-     
+      </form> <!-- Login knappen er en del af <form> men den skal først rykkes derned når vi lava javascript til <form> --> 
+
         <a href="forside.html">
-          <button class="login-button" id="login-button">LOG IND</button>
+          <button class="login-button" onclick="location.href='forside.html'" id="login-button">LOG IND</button>
         </a>
-        
-        
-      
-      </form>
+  
    
 
     </div>
   </main>
+
+<body>
   
   <footer>
-    <nav><!-- Navigation links go here --></nav>
+    <nav><!-- Navigation --></nav>
   </footer>
 </html>
 
