@@ -18,6 +18,11 @@ body {
   background-color: #D6E2E1;
 }
 
+body {
+  overflow-y: auto; /* Kan hjælpe til at fixe scroll (ikke i det her tilfælde men god at have med) */
+  padding-bottom: 85px; /* Hjalp med at fixe scroll da footeren er fixed */
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -25,8 +30,7 @@ body {
   height: 100%;
   margin: 0 auto;
 }
-  
-  
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
