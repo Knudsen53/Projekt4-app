@@ -6,7 +6,6 @@ header {
   align-items: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   z-index: 9999;
-
 }
 
 html {
@@ -22,7 +21,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-color: #D6E2E1;
-  height: 100%;
+  padding-bottom: 80px;
 }
 
 body {
@@ -34,9 +33,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  width: 160px;
-  margin: 0 auto;
+  height: 50px;
+  width: 140px;
+  margin-top: 20px;
 }
 
 
@@ -46,21 +45,23 @@ h4 {
   color: #19444D;
   margin-top: 18px;
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 12px;
   font-weight: normal;
   width: 100%;
 }
 
 h1 {
 
-  padding: 10 10 10 0px;
-  font-size: 23px;
+  padding: 5 5 5 0px;
+  font-size: 25px;
   color: #19444D;
   text-shasdow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 1vh;
 
 }
 
 h3 {
+  margin-top: 3vh;
   font-size: 18px;
   color: #19444D;
   font-weight: normal;
@@ -77,11 +78,12 @@ h3 {
 
 div.container {
   height: 12vh;
+  margin: 15px;
 }
 
 
 .item {
-  width: 400px;
+  width: 90%;
   height: 100px;
   padding-bottom: 0px;
 
@@ -93,29 +95,30 @@ img {
 }
 
 img.pita {
-  height: 170px;
-  width: 300px;
+  height: 160px;
+  width: 280px;
   border-radius: 10px;
   box-shadow:4px 4px 6px rgba(0, 0, 0, 0.5);
-  margin-top: 3vh;
+  margin-top: 2vh;
 
 }
 
 img.stemmeknap {
-  width:320px;
-  height: 100px;
+  width:290px;
+  height: 90px;
 }
 
 button.afslut {
   background-color: #19444D;
   width: 150px;
   height: 50px;
-  margin-top: 9vh;
+  margin-top: 3vh;
   border-radius: 7px;
   border: none;
   color: white;
   font-size: 18px;
   font-weight: 500;
+
 }
 
 
@@ -129,7 +132,7 @@ button.afslut {
 /* Slides */
 .mySlides {
   display: none;
-  padding: 20px;
+  padding: 5%;
   text-align: center;
   height: 70vh;
 }
@@ -145,7 +148,7 @@ button.afslut {
   padding: 16px;
   color: #19444D;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -157,7 +160,7 @@ button.afslut {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through
 .prev:hover, .next:hover {
   background-color: transparent;
   color: white;
