@@ -24,6 +24,7 @@ header {
       height: 30vh;
       position: relative;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 2);
+      margin-bottom: 20px;
     }
   
     
@@ -45,18 +46,21 @@ header {
       left: 50%;
       transform: translate(-50%, -50%);
       white-space: nowrap;
+      margin-top: 60px;
     }
 
 
     .pointoffer-images {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
+      margin: 0 -10px;
+      margin-top: 70px;
     }
     
     .image {
       text-align: center;
-      margin: 0 10px;
+      margin: -10px;
+
     }
     
     .image img {
@@ -69,6 +73,11 @@ header {
     
     .image p {
       margin-bottom: 0;
+    }
+
+    .rounded-img {
+      border-radius: 10px;
+      width: 75%;
     }
 
 
