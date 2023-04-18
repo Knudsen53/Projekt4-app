@@ -38,6 +38,41 @@ header {
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
   
+
+    .centered-text {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+
+
+    .pointoffer-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .image {
+      text-align: center;
+      margin: 0 10px;
+    }
+    
+    .image img {
+      max-width: 100%;
+    }
+    
+    .image h2 {
+      margin-top: 0;
+    }
+    
+    .image p {
+      margin-bottom: 0;
+    }
+
+
+
   .logo {
     display: flex;
     justify-content: center;
