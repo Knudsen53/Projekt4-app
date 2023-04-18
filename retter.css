@@ -1,0 +1,164 @@
+header {
+  height: 85px;
+  background-color: #19444D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #D6E2E1;
+  height: 100%;
+}
+
+body {
+  overflow-y: auto; /* Kan hjælpe til at fixe scroll (ikke i det her tilfælde men god at have med) */
+  padding-bottom: 85px; /* Hjalp med at fixe scroll da footeren er fixed */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 140px;
+  margin-top: 20px;
+}
+
+h1 {
+
+  font-size: 23px;
+  color: #19444D;
+  text-shasdow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  float: left;
+  margin-top: 5vh;
+  margin-left: 40px;
+
+}
+
+
+h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  color: #19444D;
+}
+
+img.retter {
+  height:250px;
+  width: 300px;
+  border-radius: 6px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 40px;
+
+}
+
+.beskrivelse {
+  width: 300px;
+  margin-top: 0px;
+  margin-left: 40px;
+  color: grey;
+  float: left;
+}
+
+p.pris {
+  color: #19444D;
+  margin-left: 40px;
+  margin-top: 0vh;
+  float: left;
+}
+
+
+footer {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  height: 90px;
+  background-color: #19444D;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed !important;
+  bottom: 0 !important;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  margin: 0px;
+}
+
+.icon-container:not(:last-child) {
+  margin-right: 5%;
+}
+
+.icon-container.icon1 {
+  margin-right: 20px;
+}
+
+.icon-container.icon2 {
+  margin-left: 20px;
+}
+
+.icon-container.icon3 {
+  margin-right: 20px;
+}
+
+.icon-container.icon4 {
+  margin-left: -10px;
+  margin-bottom: 5px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.icon img {
+  max-width: 45px;
+  max-height: 45px;
+  object-fit: contain;
+}
+
+.icon span {
+  margin-top: 0.2em;
+  font-size: 0.8em;
+}
+}
+
+@media (max-width: 512px) { /* adjust styles for smaller screens */
+.icon-container {
+width: 30%; /* make each icon container take up 50% of the width */
+
+}
+
+.icon-container.icon2 {
+  margin-left: 0px;
+}
+}
