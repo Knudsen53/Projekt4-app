@@ -2,8 +2,9 @@ header {
   height: 85px;
   background-color: #19444D;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content:center;
+  position: relative;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
@@ -34,15 +35,28 @@ body {
   padding-bottom: 85px; /* Hjalp med at fixe scroll da footeren er fixed */
 }
 
+
+
 .logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 50px;
     width: 140px;
     margin-top: 10px;
+    justify-content: center;
+    text-align: center;
 }
 
+
+.pil {
+    display: flex;
+    float:left;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+
+
+
+}
 h1 {
 
   padding: 10 10 10 0px;
