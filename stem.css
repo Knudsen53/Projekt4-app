@@ -3,14 +3,41 @@
 }
 
 header {
-    height: 85px;
-    background-color: #19444D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+  height: 85px;
+  background-color: #19444D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  position: relative;
+  
 }
+
+.pil {
+  height: 31.55px;
+  width: 18.4px;
+  margin: 0;
+  margin-left: 23px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 140px;
+  margin-top: 10px;
+}
+
+nav {
+  position: relative;
+}
+
 
 body {
     margin: 0;
@@ -24,19 +51,13 @@ body {
 
 
 
+
 body {
     overflow-y: auto; /* Kan hjælpe til at fixe scroll (ikke i det her tilfælde men god at have med) */
     padding-bottom: 85px; /* Hjalp med at fixe scroll da footeren er fixed */
   }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 140px;
-    margin-top: 10px;
-}
+
 
 .grid-container {
     display: grid;

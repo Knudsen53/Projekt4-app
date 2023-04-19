@@ -9,6 +9,17 @@ header {
     width: 100%;
   }
 
+  .pil {
+    height: 31.55px;
+    width: 18.4px;
+    margin: 0;
+    margin-left: 23px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+  
+  }
+  
   .logo {
     display: flex;
     justify-content: center;
