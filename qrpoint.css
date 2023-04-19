@@ -41,7 +41,7 @@ header {
     color: #19444D;
     height: 50px;
     margin: 40px auto 0;
-    margin-left: 70px;
+    margin-left: 130px;
   }
   
   .banner h1 {
@@ -68,7 +68,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 50vh;
   }
   
   .picture-container img {
@@ -79,7 +79,7 @@ header {
 
   .heading-text {
     text-align: center;
-    margin-top: 20px;
+    margin-top: -20px;
   }
   
   .heading-text h2 {
@@ -91,7 +91,7 @@ header {
   .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   
   button {
