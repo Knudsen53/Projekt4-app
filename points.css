@@ -6,9 +6,9 @@ header {
   align-items: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   z-index: 9999;
-  width: 100%;
+  width: 105%;
 }
-  
+
   body {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ header {
     background-color: #D6E2E1;
   }
 
-   
+
     .image-container {
       display: flex;
       justify-content: center;
@@ -29,8 +29,8 @@ header {
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 2);
       margin-bottom: 20px;
     }
-  
-    
+
+
     .text-overlay {
       position: absolute;
       top: 50%;
@@ -40,7 +40,7 @@ header {
       color: #fff;
       font-size: 10px;
     }
-  
+
 
     .centered-text {
       position: absolute;
@@ -52,7 +52,7 @@ header {
       color: #FFFFFF
     }
 
-  
+
 
     .pointoffer-images {
       display: flex;
@@ -60,27 +60,28 @@ header {
       margin: 0 -10px;
       margin-top: 70px;
     }
-    
+
     .image {
       text-align: center;
       margin: -10px;
 
     }
-    
+
     .image img {
       max-width: 100%;
     }
-    
+
     .image h2 {
       margin-top: 0;
       color: #19444D;
     }
-    
+
     .image p {
       margin-bottom: 0;
       color: #19444D;
-      
+
     }
+
 
     .rounded-img {
       border-radius: 10px;
@@ -98,6 +99,8 @@ header {
     }
 
 
+
+
   footer {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     height: 90px;
@@ -110,7 +113,7 @@ header {
     bottom: 0 !important;
     width: 100%;
   }
-  
+
   @media only screen and (max-width: 600px) {
 
     .icon-container {
@@ -120,59 +123,59 @@ header {
       width: 15%;
       margin: 0px;
     }
-    
+
     .icon-container:not(:last-child) {
       margin-right: 5%;
     }
-    
+
     .icon-container.icon1 {
       margin-right: 20px;
     }
-    
+
     .icon-container.icon2 {
       margin-left: 20px;
     }
-    
+
     .icon-container.icon3 {
       margin-right: 20px;
     }
-    
+
     .icon-container.icon4 {
       margin-left: -10px;
       margin-bottom: 5px;
     }
-    
+
     .icon {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
-    
+
     .icon a {
       display: block;
       width: 100%;
       height: 100%;
     }
-    
+
     .icon img {
       max-width: 45px;
       max-height: 45px;
       object-fit: contain;
     }
-    
+
     .icon span {
       margin-top: 0.2em;
       font-size: 0.8em;
     }
     }
-    
+
     @media (max-width: 512px) { /* adjust styles for smaller screens */
     .icon-container {
     width: 30%; /* make each icon container take up 50% of the width */
-    
+
     }
-    
+
     .icon-container.icon2 {
       margin-left: 0px;
     }
