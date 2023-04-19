@@ -40,8 +40,8 @@ header {
     align-items: center;
     color: #19444D;
     height: 50px;
-    padding: 20px;
-    margin: 60px auto 0;
+    margin: 40px auto 0;
+    margin-left: 130px;
   }
   
   .banner h1 {
@@ -61,6 +61,56 @@ header {
     height: 150px;
     object-fit: contain;
     margin-right: 10px;
+    
+  }
+
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .picture-container img {
+   height: 300px;
+   width: 300px;
+  }
+
+
+  .heading-text {
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  .heading-text h2 {
+    font-size: 30px;
+    color: #19444D;
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  button {
+    display: block;
+    margin: auto;
+    margin-top: -20px;
+    padding: 10px 30px;
+    font-size: 30px;
+    background-color: #19444D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
   }
 
 footer {
