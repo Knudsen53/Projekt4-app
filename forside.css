@@ -1,13 +1,12 @@
 header {
-  height: 85px;
-  background-color: #19444D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+    height: 85px;
+    background-color: #19444D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -24,12 +23,12 @@ body {
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 160px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 140px;
+    margin-top: 20px;
 }
 
 .grid-container {
@@ -173,9 +172,8 @@ h4 {
 }
 
 footer {
-  height: 105px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  height: 100px;
+  height: 90px;
   background-color: #19444D;
   color: #fff;
   display: flex;
@@ -209,7 +207,7 @@ footer {
 }
 
 .icon-container.icon3 {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .icon-container.icon4 {
@@ -231,13 +229,13 @@ footer {
 }
 
 .icon img {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 45px;
+  max-height: 45px;
   object-fit: contain;
 }
 
 .icon span {
-  margin-top: 0.5em;
+  margin-top: 0.2em;
   font-size: 0.8em;
 }
 }
