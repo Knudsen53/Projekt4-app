@@ -42,3 +42,4 @@ if (starNumber < 250) {
 } else {
   starText.classList.add('high');
 }
+
