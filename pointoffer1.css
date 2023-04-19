@@ -62,7 +62,7 @@ header {
       }
       
       
-      .footer-text {
+      .pris-text {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -73,7 +73,7 @@ header {
         width: 100%;
       }
       
-      .price {
+      .pris {
         font-size: 18px;
         margin-right: 10px;
       }
