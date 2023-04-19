@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     height: 85px;
     background-color: #19444D;
@@ -7,7 +11,7 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 9999;
 }
-  
+
 body {
     margin: 0;
     padding: 0;
@@ -17,21 +21,23 @@ body {
     flex-direction: column;
     background-color: #D6E2E1;
 }
-  
+
+
+
 body {
     overflow-y: auto; /* Kan hjælpe til at fixe scroll (ikke i det her tilfælde men god at have med) */
     padding-bottom: 85px; /* Hjalp med at fixe scroll da footeren er fixed */
-}
-  
+  }
+
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 160px;
-    margin: 0 auto;
+    height: 50px;
+    width: 140px;
+    margin-top: 10px;
 }
-  
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -39,15 +45,15 @@ body {
     background-color: #D6E2E1;
     padding: 10px;
 }
-  
+
 .grid-container > div {
     text-align: center;
     font-size: 30px;
     position: relative;
 }
-  
-  
-  
+
+
+
 h4 {
     position: absolute;
     top: 0;
@@ -72,7 +78,7 @@ h4 {
   position: relative;
   margin-bottom: -7px;
   }
-  
+
 .text-container {
   display: flex;
   flex-direction: column;
@@ -80,9 +86,9 @@ h4 {
   align-items: center;
   margin-top: -25px;
   text-align: center;
-    
+
 }
-  
+
 
  .text-container p {
 
@@ -95,14 +101,14 @@ h4 {
   border-radius: 10px;
   padding-bottom: 15px;
   text-align: left;
-  
+
   }
 
 .item1 {
     grid-column: 1/5;
     margin: 0;
     padding: 0;
-    
+
 }
 
 .item1 p {
@@ -110,7 +116,7 @@ h4 {
     color: #19444D;
     margin: 8px;
 }
-  
+
 .item2 {
     grid-column: 1/3;
     grid-row: 2;
@@ -119,7 +125,7 @@ h4 {
 
 }
 
-  
+
 .item3 {
     grid-column: 3/5;
     grid-row: 2;
@@ -127,7 +133,7 @@ h4 {
     align-items: center;
 
 }
-  
+
 .item2 h4,
 .item3 h4{
     margin-top: 15px;
@@ -171,7 +177,7 @@ h4 {
     right: 0;
     bottom: 0;
     z-index: 1; /* Placer over div'en */
-    
+
 }
 
 #overlay {
@@ -193,20 +199,20 @@ h4 {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   text-align: center;
-  
+
 }
 
 .overlay-content h2 {
   font-size: 38px;
   color: #FFFFFF;
   margin-top: 100px;
- 
+
 }
 
 .overlay-content p {
   font-size: 33px;
   color: #FFFFFF;
-  
+
 }
 
 .overlay-content button {
@@ -230,7 +236,7 @@ h4 {
 .item5 {
   position: relative;
   z-index: 1;
-  
+
 }
 
 button {
@@ -252,83 +258,82 @@ button {
 
 
 
-  footer {
-    height: 105px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    height: 100px;
-    background-color: #19444D;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed !important;
-    bottom: 0 !important;
-    width: 100%;
-  }
-  
-  @media only screen and (max-width: 600px) {
-  
-  .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15%;
-    margin: 0px;
-  }
-  
-  .icon-container:not(:last-child) {
-    margin-right: 5%;
-  }
-  
-  .icon-container.icon1 {
-    margin-right: 20px;
-  }
-  
-  .icon-container.icon2 {
-    margin-left: 20px;
-  }
-  
-  .icon-container.icon3 {
-    margin-right: 30px;
-  }
-  
-  .icon-container.icon4 {
-    margin-left: -10px;
-    margin-bottom: 5px;
-  }
-  
-  .icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .icon a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .icon img {
-    max-width: 60px;
-    max-height: 60px;
-    object-fit: contain;
-  }
-  
-  .icon span {
-    margin-top: 0.5em;
-    font-size: 0.8em;
-  }
-  }
-  
-  @media (max-width: 512px) { /* adjust styles for smaller screens */
-  .icon-container {
-  width: 30%; /* make each icon container take up 50% of the width */
-  
-  }
-  
-  .icon-container.icon2 {
-    margin-left: 0px;
-  }
-  }
+footer {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  height: 90px;
+  background-color: #19444D;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed !important;
+  bottom: 0 !important;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  margin: 0px;
+}
+
+.icon-container:not(:last-child) {
+  margin-right: 5%;
+}
+
+.icon-container.icon1 {
+  margin-right: 20px;
+}
+
+.icon-container.icon2 {
+  margin-left: 20px;
+}
+
+.icon-container.icon3 {
+  margin-right: 20px;
+}
+
+.icon-container.icon4 {
+  margin-left: -10px;
+  margin-bottom: 5px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.icon img {
+  max-width: 45px;
+  max-height: 45px;
+  object-fit: contain;
+}
+
+.icon span {
+  margin-top: 0.2em;
+  font-size: 0.8em;
+}
+}
+
+@media (max-width: 512px) { /* adjust styles for smaller screens */
+.icon-container {
+width: 30%; /* make each icon container take up 50% of the width */
+
+}
+
+.icon-container.icon2 {
+  margin-left: 0px;
+}
+}
