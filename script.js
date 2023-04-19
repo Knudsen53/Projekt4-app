@@ -32,14 +32,3 @@ showSlides(slideIndex);
 //* introduktion slut *//
 
 
-const starText = document.querySelector('.star-text');
-const starNumber = parseInt(starText.innerText);
-
-if (starNumber < 250) {
-  starText.classList.add('low');
-} else if (starNumber >= 250 && starNumber < 400) {
-  starText.classList.add('medium');
-} else {
-  starText.classList.add('high');
-}
-
