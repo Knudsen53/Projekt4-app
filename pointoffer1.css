@@ -94,6 +94,11 @@ header {
         margin-bottom: 2px;
       }   
 
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
       
  
 footer {
