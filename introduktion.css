@@ -60,6 +60,12 @@ h1 {
 
 }
 
+h2 {
+  color: #19444D;
+  font-size: 20px;
+  margin-top: 4vh;
+}
+
 h3 {
   margin-top: 3vh;
   font-size: 18px;
@@ -99,7 +105,6 @@ img.pita {
   width: 280px;
   border-radius: 10px;
   box-shadow:4px 4px 6px rgba(0, 0, 0, 0.5);
-  margin-top: 2vh;
 
 }
 
