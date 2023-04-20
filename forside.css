@@ -45,6 +45,18 @@ body {
 }
 
 
+h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  color: #19444D;
+}
+
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -61,26 +73,16 @@ body {
 }
 
 
-
-h4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 10px;
-  font-size: 20px;
-  color: #19444D;
-}
-
-
-
-
 .foto{
   width: 100%;
   height: 90%;
   margin-top: 20px;
   border-radius: 8px;
+  }
+
+  #slideshow {
+    width: 100%;
+    height: 250px;
   }
 
 .foto2{
@@ -106,10 +108,6 @@ h4 {
   margin: 20px 0 0 50px;
 }
 
-#slideshow {
-  width: 100%;
-  height: 250px;
-}
 
 
 .item1 {

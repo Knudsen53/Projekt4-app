@@ -23,7 +23,7 @@ function showSlides() {
       slideshow.src = images[currentIndex];
     }
 
-    setInterval(nextImage, 5000); // Change image every 3 seconds
+    setInterval(nextImage, 5000); // Skifter billede hvert 5 sekund
 
   });
 }
