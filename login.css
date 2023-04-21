@@ -180,6 +180,16 @@ footer {
 
   }
 
+  #email {
+    width: 105%;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-bottom: 1px solid #ccc;
+    height: 36.5px;
+  }
+
   .forgot-password-link {
     text-align: right;
     margin-right: -30px;
