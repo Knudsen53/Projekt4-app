@@ -1,0 +1,206 @@
+header {
+    height: 85px;
+    background-color: #19444D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+
+  .pil {
+    height: 31.55px;
+    width: 18.4px;
+    margin: 0;
+    margin-left: 23px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+  
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #D6E2E1;
+    height: 100%;
+  }
+  
+  body {
+    overflow-y: auto; /* Kan hjælpe til at fixe scroll (ikke i det her tilfælde men god at have med) */
+    padding-bottom: 85px; /* Hjalp med at fixe scroll da footeren er fixed */
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 140px;
+    margin-top: 20px;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #19444D;
+    height: 50px;
+    margin: 40px auto 0;
+    margin-left: 130px;
+  }
+  
+  .banner h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+  
+  .banner img {
+    max-width: 100%;
+    max-height: 90%;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  
+  .banner-image {
+    height: 150px;
+    object-fit: contain;
+    margin-right: 10px;
+    
+  }
+
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .picture-container img {
+   height: 300px;
+   width: 300px;
+  }
+
+
+  .heading-text {
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  .heading-text h2 {
+    font-size: 30px;
+    color: #19444D;
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  button {
+    display: block;
+    margin: auto;
+    margin-top: -20px;
+    padding: 10px 30px;
+    font-size: 30px;
+    background-color: #19444D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+footer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    height: 90px;
+    background-color: #19444D;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed !important;
+    bottom: 0 !important;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin: 0px;
+  }
+  
+  .icon-container:not(:last-child) {
+    margin-right: 5%;
+  }
+  
+  .icon-container.icon1 {
+    margin-right: 20px;
+  }
+  
+  .icon-container.icon2 {
+    margin-left: 20px;
+  }
+  
+  .icon-container.icon3 {
+    margin-right: 20px;
+  }
+  
+  .icon-container.icon4 {
+    margin-left: -10px;
+    margin-bottom: 5px;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .icon a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .icon img {
+    max-width: 45px;
+    max-height: 45px;
+    object-fit: contain;
+  }
+  
+  .icon span {
+    margin-top: 0.2em;
+    font-size: 0.8em;
+  }
+  }
+  
+  @media (max-width: 512px) { /* adjust styles for smaller screens */
+  .icon-container {
+  width: 30%; /* make each icon container take up 50% of the width */
+  
+  }
+  
+  .icon-container.icon2 {
+    margin-left: 0px;
+  }
+  }
+  

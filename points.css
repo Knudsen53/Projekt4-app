@@ -1,12 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
-    height: 100px;
+    height: 85px;
     background-color: #19444D;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  body {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.pil {
+  height: 31.55px;
+  width: 18.4px;
+  margin: 0;
+  margin-left: 23px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -14,82 +31,120 @@ header {
     min-height: 100vh;
     flex-direction: column;
     background-color: #D6E2E1;
-  }
-  
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+}
 
-  #stjerne {
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
+
+
+body {
+    overflow-y: auto; /* Kan hjælpe til at fixe scroll (ikke i det her tilfælde men god at have med) */
+    padding-bottom: 85px; /* Hjalp med at fixe scroll da footeren er fixed */
   }
 
 
-  .item1 {
-    grid-column: 1/5;
-  }
-    
-  
-  .foto{
-    width: 100%;
-    height: 90%;
-    margin-top: 20px;
-    border-radius: 20px;
-    }
-    
-  .foto2{
-    width: 100%;
-    height: 115px;
-    margin-top: 20px;
-    border-radius: 20px;
-    }
-  
-  
-  .item2 {
-    grid-column: 1/3;
-    grid-row: 2;
-    }
-  
-    .item2 h4 {
-      margin: 0 70%; /* Fjern standardmargen */
-    }
-    
-  .item3 {
-    grid-column: 3/5;
-    grid-row: 2;
-    }
-    
-  .item4 {
-    grid-column: 1/5;
-    grid-row: 3;
-    }
-    
-  .item5 {
-    grid-column: 1/5;
-    grid-row: 4;
+
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+      position: relative;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 2);
+      margin-bottom: 20px;
+
     }
 
 
-  footer {
-    height: 105px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    height: 100px;
-    background-color: #19444D;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed !important;
-    bottom: 0 !important;
-    width: 100%;
-  }
+    .stjerne {
+      height: 200px;
+      width: 200px;
 
-  @media only screen and (max-width: 600px) {
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      font-size: 10px;
+    }
+
+
+    .centered-text {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      margin-top: 60px;
+      color: #FFFFFF
+    }
+
+
+
+    .pointoffer-images {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      margin-top: 60px;
+    }
+
+    .image {
+      text-align: center;
+      margin: 0px;
+
+    }
+
+    .image img {
+      max-width: 100%;
+    }
+
+    .image h2 {
+      margin-top: 0;
+      color: #19444D;
+    }
+
+    .image p {
+      margin-bottom: 0;
+      color: #19444D;
+
+    }
+
+
+    .rounded-img {
+      border-radius:8px;
+      width: 90%;
+    }
+
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 140px;
+        margin-top: 10px;
+    }
+
+
+    footer {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      height: 90px;
+      background-color: #19444D;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: fixed !important;
+      bottom: 0 !important;
+
+    }
+
+    @media only screen and (max-width: 600px) {
+
 
     .icon-container {
       display: flex;
@@ -98,61 +153,28 @@ header {
       width: 15%;
       margin: 0px;
     }
-    
-    .icon-container:not(:last-child) {
-      margin-right: 5%;
-    }
-    
-    .icon-container.icon1 {
-      margin-right: 20px;
-    }
-    
-    .icon-container.icon2 {
-      margin-left: 20px;
-    }
-    
-    .icon-container.icon3 {
-      margin-right: 30px;
-    }
-    
+
     .icon-container.icon4 {
       margin-left: -10px;
       margin-bottom: 5px;
     }
-    
+
     .icon {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
-    
+
+
+
     .icon a {
       display: block;
       width: 100%;
       height: 100%;
     }
-    
-    .icon img {
-      max-width: 60px;
-      max-height: 60px;
-      object-fit: contain;
-    }
-    
-    .icon span {
-      margin-top: 0.5em;
-      font-size: 0.8em;
-    }
-    }
-    
-    @media (max-width: 512px) { /* adjust styles for smaller screens */
-    .icon-container {
-    width: 30%; /* make each icon container take up 50% of the width */
-    
-    }
-    
+
     .icon-container.icon2 {
       margin-left: 0px;
     }
     }
-    

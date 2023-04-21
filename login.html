@@ -5,56 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login.css">
-    <script src="script.js"></script>
+    <script src="login.js"></script>
   </head>
 
-<body>
-
-  <header>
-    <nav> 
-        <img src="Billeder\Logo.png" alt="Logo">
-    </nav>
+  <body>
+    <header>
+      <nav>
+        <a href="forside.html" class="logo">
+        <img class="logo" src="Billeder/Logo.png" alt="logo">
+        </a>
+      </nav>
     </header>
-  
-  <main>
+
+    <main>
     <div class="login-intro">
       <h2>LOG IND</h2>
     </div>
-    
+
     <div class="login-box">
 
       <form id="login-form">
-          <h3><label for="studie-nr">Email:</label></h3>
-          <input type="text" id="studie-nr" placeholder="UCL mail">
-          <h3><label for="kode">Kode:</label></h3>
-          <input type="password" id="kode" placeholder="Kode">
-          <div class="checkbox-container">
+        <h3><label for="email">Email:</label></h3>
+        <input type="email" id="email" placeholder="UCL mail">
+        <span id="email-error-message"></span> <!-- Feedback besked -->
+        <h3><label for="kode">Kode:</label></h3>
+        <input type="password" id="kode" placeholder="Kode">
+        <div class="checkbox-container">
           <div class="remember-me-container">
-            
             <input type="checkbox" id="remember-me">
             <label for="remember-me">Husk mig</label>
-        </div>
+          </div>
           <div class="forgot-password-link">
             <a href="#">Glemt password</a>
+          </div>
         </div>
-        
-        </div>
+      </form>
 
-      </form> <!-- Login knappen er en del af <form> men den skal først rykkes derned når vi lava javascript til <form> --> 
-
-        <a href="forside.html">
-          <button class="login-button" onclick="location.href='forside.html'" id="login-button">LOG IND</button>
-        </a>
-  
-   
+      <button class="login-button" onclick="login()">LOG IND</button>
 
     </div>
   </main>
 
+
 <body>
-  
+
   <footer>
     <nav><!-- Navigation --></nav>
   </footer>
 </html>
-

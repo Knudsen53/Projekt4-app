@@ -21,9 +21,7 @@ header {
     position: absolute;
     left: 0;
   
-  }
-
-
+}
 
 body {
     margin: 0;
@@ -35,35 +33,22 @@ body {
     background-color: #D6E2E1;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-  }
 
 
 body {
     overflow-y: auto; /* Kan hjælpe til at fixe scroll (ikke i det her tilfælde men god at have med) */
     padding-bottom: 85px; /* Hjalp med at fixe scroll da footeren er fixed */
   }
-
+  
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
     width: 140px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-#points {
-    width: 117px;
-    height: 32.23px;
-    background-color: #33776B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0 0 50px;
-}
 
 
 .grid-container {
@@ -72,54 +57,29 @@ body {
     gap: 7px;
     background-color: #D6E2E1;
 }
-
+  
 .grid-container > div {
     text-align: center;
     font-size: 30px;
     position: relative;
 }
+  
+
 
 .item1 {
     grid-row: 1;
-    grid-column: 3/5;
-}
-
-.item1 p {
-    font-size: 18px;
-    color: white;
-}
-
-
-.item2 {
-    grid-row: 2;
     grid-column: 1/5;
 }
 
-.item2 p {
+.item1 p {
     font-size: 40px;
     font-weight: bold;
     color: #19444D;
 }
 
-.box {
-    background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    margin: 0;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.box p {
-    margin: 0;
-    text-align: left;
-    font-size: 25px;
-    font-weight: bold;
-    opacity: 65%;
+.item2 {
+    grid-row: 2;
+    grid-column: 1/5;
 }
 .item3 {
     grid-row: 3;
@@ -146,98 +106,66 @@ body {
 
 }
 
-.item7 {
-    grid-row: 7;
-    grid-column: 1/5;
 
+.box {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
-
-.item8 {
-    grid-row: 8;
-    grid-column: 1/5;
-
+  
+.box p {
+    margin: 0;
 }
-
-
-.item9 {
-    grid-row: 9;
-    grid-column: 1/5;
-}
-
-button {
-    background-color: #19444D;
-    color: #fff;
-    border: none;
-    width: 214px;
-    height: 71px;
-    border-radius: 6px;
-    margin-top: 35px;
-    font-size: 43px;
-    cursor: pointer;
-    margin-bottom: 25px;
-}
-
-
-.switch {
+  
+.box .top-left {
     position: absolute;
-    display: inline-block;
-    width: 92px;
-    height: 44px;
-    right: 0;
-}
-
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .slider {
-    position: absolute;
-    cursor: pointer;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #E6F1F0;
-    border: #19444D;
-    border-width: 0.5px;
-    box-shadow: inset 6px 2px 6px #A3A3A3;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 20px;
-  }
-
-  .slider:before {
+    margin-left: 8px;
+    margin-top: 6px;
+}
+  
+.box .top-right {
     position: absolute;
-    content: "";
-    height: 43px;
-    width: 45px;
-    left: -1px;
-    background-color: #E6F1F0;
-    border: #19444D;
-    border-width: 0.5px;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 20px;
-  }
-
-  input:checked + .slider {
-    background-color: #19444D;
-  }
-
-  input:focus + .slider {
-    box-shadow: inset 6px 2px 6px #000000;
-  }
-
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(48px);
-  }
-
-
-
+    top: 0;
+    right: 0;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+  
+.box .bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 8px;
+    margin-bottom: 6px;
+}
+  
+.box .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 8px;
+    margin-bottom: 6px;
+}
+  
+.box .top-left p,
+.box .top-right p,
+.box .bottom-left p,
+.box .bottom-right p {
+    font-size: 20px;
+    font-weight: bold;
+    
+    color: #19444D;
+}
 
 
 
@@ -257,9 +185,9 @@ footer {
     bottom: 0 !important;
     width: 100%;
 }
-
+  
 @media only screen and (max-width: 600px) {
-
+  
 .icon-container {
     display: flex;
     justify-content: center;
@@ -267,60 +195,61 @@ footer {
     width: 15%;
     margin: 0px;
 }
-
+  
 .icon-container:not(:last-child) {
     margin-right: 5%;
 }
-
+  
 .icon-container.icon1 {
     margin-right: 20px;
 }
-
+  
 .icon-container.icon2 {
     margin-left: 20px;
 }
-
+  
 .icon-container.icon3 {
     margin-right: 20px;
 }
-
+  
 .icon-container.icon4 {
     margin-left: -10px;
     margin-bottom: 5px;
 }
-
+  
 .icon {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
+  
 .icon a {
     display: block;
     width: 100%;
     height: 100%;
 }
-
+  
 .icon img {
     max-width: 45px;
     max-height: 45px;
     object-fit: contain;
 }
-
+  
 .icon span {
     margin-top: 0.2em;
     font-size: 0.8em;
 }
 }
-
+  
 @media (max-width: 512px) { /* adjust styles for smaller screens */
 .icon-container {
   width: 30%; /* make each icon container take up 50% of the width */
-
+  
   }
-
+  
 .icon-container.icon2 {
     margin-left: 0px;
 }
 }
+  

@@ -1,17 +1,30 @@
-// Get the star image element
-const star = document.getElementById("star");
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// Set the maximum number of points
-const maxPoints = 10;
 
-// Set the current number of points (replace with your own value)
-const currentPoints = 7;
+function showSlides() {
+  console.log("showSlides() called");
+  window.addEventListener('DOMContentLoaded', function() {
+    var images = [
+      "Billeder/mandag.png",
+      "Billeder/tirsdag.png",
+      "Billeder/onsdag.png",
+      "Billeder/torsdag.png",
+    ];
 
-// Calculate the percentage of points
-const percentPoints = (currentPoints / maxPoints) * 100;
+    var currentIndex = 0;
 
-// Convert the percentage to a color value (replace with your own color scheme)
-const color = `rgb(${255 - percentPoints * 2.55}, ${percentPoints * 2.55}, 0)`;
+    function nextImage() {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      var slideshow = document.getElementById("slideshow");
+      slideshow.src = images[currentIndex];
+    }
 
-// Set the star's background color to the calculated color
-star.style.backgroundColor = color;
+    setInterval(nextImage, 5000); // Skifter billede hvert 5 sekund
+
+  });
+}
+

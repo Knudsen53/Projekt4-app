@@ -1,0 +1,215 @@
+header {
+  height: 85px;
+  background-color: #19444D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+html {
+  width: 100%;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #D6E2E1;
+  padding-bottom: 80px;
+}
+
+body {
+  overflow-y: auto; /* Kan hjælpe til at fixe scroll (ikke i det her tilfælde men god at have med) */
+  padding-bottom: 85px; /* Hjalp med at fixe scroll da footeren er fixed */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 140px;
+  margin-top: 20px;
+}
+
+
+
+h4 {
+  font-size: 18px;
+  color: #19444D;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  font-weight: normal;
+  width: 100%;
+}
+
+h1 {
+
+  padding: 5 5 5 0px;
+  font-size: 25px;
+  color: #19444D;
+  text-shasdow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 1vh;
+
+}
+
+h2 {
+  color: #19444D;
+  font-size: 20px;
+  margin-top: 4vh;
+}
+
+h3 {
+  margin-top: 3vh;
+  font-size: 18px;
+  color: #19444D;
+  font-weight: normal;
+
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content:flex-start;
+
+}
+
+div.container {
+  height: 12vh;
+  margin: 15px;
+}
+
+
+.item {
+  width: 90%;
+  height: 100px;
+  padding-bottom: 0px;
+
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+img.pita {
+  height: 160px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow:4px 4px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+img.stemmeknap {
+  width:290px;
+  height: 90px;
+}
+
+button.afslut {
+  background-color: #19444D;
+  width: 150px;
+  height: 50px;
+  margin-top: 3vh;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #transparent;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 5%;
+  text-align: center;
+  height: 70vh;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #19444D;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through
+.prev:hover, .next:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+
+
+}
+
+footer {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  height: 80px;
+  background-color: #19444D;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed !important;
+  bottom: 0 !important;
+  width: 100%;
+}
