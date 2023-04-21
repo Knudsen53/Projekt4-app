@@ -6,7 +6,7 @@ for (var i = 0; i < buttons.length; i++) {
         this.parentNode.querySelector('.overlay').classList.add('show');
     });
 }
-
+ 
 
 
 function showOverlay() {
