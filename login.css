@@ -123,6 +123,14 @@ a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+#email {
+  width: 105%;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 36.5px;
+}
+
 
 footer {
   height: 100px;

@@ -9,5 +9,5 @@ function login() {
   }
 
   // Redirect to introduktion.html
-  window.location.href = "introduktion.html";
+  window.location.href = "Introduktion.html";
 }
